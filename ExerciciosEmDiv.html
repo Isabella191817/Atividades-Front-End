@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Mentalista</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: darkred;
+        }
+
+    
+        .menu ul {
+            list-style: none; 
+            background-color: maroon;
+            margin: 0;
+            padding: 0;
+            display: flex; 
+            justify-content: center;
+        }
+
+        .menu ul li a {
+            display: block;
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .menu ul li a:hover {
+            background-color: sienna; 
+        }
+
+    
+        .container {
+            display: flex;
+            max-width: 1000px;
+            margin: 20px auto;
+            gap: 20px;
+            padding: 0 10px;
+        }
+
+        
+        .principal {
+            flex: 3;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .lateral {
+            flex: 1;
+            background: #e9ecef;
+            padding: 20px;
+            border-radius: 8px;
+            height: fit-content;
+        }
+
+        .imagem-container {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .imagem-container img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        .legenda {
+            font-size: 0.85em;
+            color: #666;
+            margin-top: 8px;
+            font-style: italic;
+        }
+        .rodape {
+            text-align: center;
+            padding: 15px;
+            background: sienna;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cabecalho">
+        <h1 style="text-align: center; padding: 25px 0; margin: 0; background: sienna; color: white;">
+            The Mentalist 
+        </h1>
+        
+        <div class="menu">
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Personagens</a></li>
+                <li><a href="#">Episódios</a></li>
+                <li><a href="#">Red John</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        
+        <div class="principal">
+            
+            <div class="artigo">
+                <h2>Quem é Patrick Jane?</h2>
+                <p>Publicado em 2026 | Por Isabella Soares</p>
+
+                <div class="imagem-container">
+                    <img src="o mentalista.jpg" alt="Patrick Jane">
+                    <div class="legenda">Imagem: Patrick Jane.</div>
+                </div>
+
+                <div class="secao">
+                    <h3>A Arte da Observação</h3>
+                    <p>Patrick Jane não tem poderes paranormais. Sua capacidade de "ler mentes" vem de uma observação minuciosa do comportamento humano, linguagem corporal e pequenos detalhes que a maioria das pessoas ignora.</p>
+                </div>
+
+                <div class="secao">
+                    <h3>A Busca por Red John</h3>
+                    <p>O motor principal da série é o trágico passado de Jane e sua obsessão em capturar Red John, o serial killer responsável por destruir sua família. Essa dinâmica traz o equilíbrio perfeito entre mistério e drama.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="lateral">
+            <h3>Ficha Técnica</h3>
+            <ul>
+                <li><strong>Protagonista:</strong> Simon Baker</li>
+                <li><strong>Gênero:</strong> Drama / Policial</li>
+                <li><strong>Temporadas:</strong> 7</li>
+                <li><strong>Emissora original:</strong> CBS</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="rodape">
+        <p>&copy; 2026 - O Mentalista. Feito por Isabella Soares.</p>
+    </div>
+
+</body>
+</html>

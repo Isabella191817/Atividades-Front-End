@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercicio 3</title>
+  <style>
+  {
+      box-sizing: border-box;}
+
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      font-size: 1rem;
+}
+    .topo {
+      background:lightpink;
+      padding: 1rem 5%;
+    }
+    .links a {
+      color: #fff;
+      text-decoration: none;
+      margin-right: 1.5rem;
+    }
+
+
+    #menu-btn, .icone {
+      display: none;
+    }
+
+
+    .carrossel {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      width: 90%;
+      margin: 2rem auto;
+    }
+
+    .slide {
+      flex: 0 0 100%;
+      scroll-snap-align: start;
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 1.5rem;
+    }
+
+    .bg1 { background:deeppink; }
+    .bg2 { background:gold; }
+    .bg3 { background:hotpink; }
+
+
+    @media (max-width: 600px) {
+      .icone {
+        display: block;
+        color: #fff;
+        font-size: 1.8rem;
+        cursor: pointer;
+      }
+
+      .links {
+        display: none;
+        flex-direction: column;
+        margin-top: 1rem;
+      }
+
+      .links a {
+        margin-bottom: 0.5rem;
+      }
+
+    
+      #menu-btn:checked ~ .links {
+        display: flex;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="topo">
+    <input type="checkbox" id="menu-btn">
+    <label for="menu-btn" class="icone">&#9776;</label>
+
+    <nav class="links">
+      <a href="#">Winx</a>
+      <a href="#">Trix</a>
+      <a href="#">Escola de Alfea</a>
+    </nav>
+  </header>
+
+  <div class="carrossel">
+    <div class="slide bg1">Sei que você 🫵🏻</div>
+    <div class="slide bg2">Vai querer ser🩷</div>
+    <div class="slide bg3">Uma de nós ⭐🦋</div>
+  </div>
+
+</body>
+</html>
